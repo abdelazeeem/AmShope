@@ -1,15 +1,12 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Counter from "../components/Counter";
-import Announce from "../components/Announce";
 import Newsletter from "../components/Newsletter";
+
+import { Link } from "@material-ui/core";
 
 const ProductPage = () => {
   return (
     <div>
-      <Announce />
-      <Navbar />
       <div className="flex justify-center mobile:flex-col mobile:mt-4 mobile:p-3">
         <div className="flex-1 flex items-center justify-center">
           <img
@@ -56,12 +53,13 @@ const ProductPage = () => {
           </div>
 
           <button className="text-white bg-[#8a4af3] rounded-md shadow-md mt-[30px] p-3">
-            Add to Cart
+            <Link href="/Cart" color="inherit">
+              Add to Cart
+            </Link>
           </button>
         </div>
       </div>
       <Newsletter />
-      <Footer />
     </div>
   );
 };

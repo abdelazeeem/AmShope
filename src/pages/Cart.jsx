@@ -1,9 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Counter from "../components/Counter";
 import Newsletter from "../components/Newsletter";
-import Announce from "../components/Announce";
 const Cart = () => {
   const SummaryItemStyle = "SummaryItem flex justify-between mt-3 w-[100%]";
   const ProductDivStyle = "flex w-[100%] h-auto items-center mobile:flex-col";
@@ -11,8 +8,6 @@ const Cart = () => {
     "flex-auto flex flex-col justify-center items-center mobile:mt-7 mobile:mb-7";
   return (
     <div>
-      <Announce />
-      <Navbar />
       <div className="p-3">
         <div className="flex justify-center text-5xl">Cart</div>
 
@@ -161,7 +156,6 @@ const Cart = () => {
           </div>
         </div>
         <Newsletter />
-        <Footer />
       </div>
     </div>
   );

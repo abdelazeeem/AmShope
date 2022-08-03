@@ -4,6 +4,7 @@ import {
   ShoppingCartOutlined,
 } from "@material-ui/icons";
 import React, { useState } from "react";
+import { Link } from "@material-ui/core";
 
 const Product = ({ item }) => {
   const [hoverEffects, setHoverEffects] = useState(" opacity-0");
@@ -32,13 +33,19 @@ const Product = ({ item }) => {
         }
       >
         <div className={iconStyle}>
-          <ShoppingCartOutlined />
+          <Link href="/Cart" color="inherit">
+            <ShoppingCartOutlined />
+          </Link>
         </div>
         <div className={iconStyle}>
-          <FavoriteBorderOutlined />
+          <Link href="/ProductPage" color="inherit">
+            <FavoriteBorderOutlined />
+          </Link>
         </div>
         <div className={iconStyle}>
-          <SearchOutlined />
+          <Link href="/CatergoryPage" color="inherit">
+            <SearchOutlined />
+          </Link>
         </div>
       </div>
     </div>

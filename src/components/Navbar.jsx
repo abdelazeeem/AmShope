@@ -1,10 +1,14 @@
+import React, { Suspense, lazy } from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
-import React from "react";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import { Box } from "@material-ui/core";
+
 import { Link } from "@material-ui/core";
-import Sign from "./Sign";
+
 const Navbar = () => {
   const style = "text-[14px] cursor-pointer ml-[25px] mobile:ml-[5px] ";
 
@@ -21,7 +25,12 @@ const Navbar = () => {
               className="border-none mobile:w-[50px]"
               placeholder="Search"
             />
-            <Search className="text-[#8a4af3] m" style={{ fontSize: "16px" }} />
+            <Link href="/CatergoryPage" color="inherit">
+              <Search
+                className="text-[#8a4af3] m"
+                style={{ fontSize: "16px" }}
+              />
+            </Link>
           </div>
         </div>
 
@@ -36,18 +45,22 @@ const Navbar = () => {
 
         <div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2]">
           <div className={style}>
-            <Link href="" color="inherit">
-              Register
-            </Link>
+            <div className={style}>
+              <Link href="/Register" color="inherit">
+                Register
+              </Link>
+            </div>
           </div>
           <div className={style}>
-            <Link href="#" color="inherit">
+            <Link href="/Login" color="inherit">
               Sign In
             </Link>
           </div>
           <div className={style}>
             <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
+              <Link href="/CatergoryPage" color="inherit">
+                <ShoppingCartOutlined />
+              </Link>
             </Badge>
           </div>
         </div>

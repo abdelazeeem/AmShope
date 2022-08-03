@@ -10,7 +10,7 @@ const Newsletter = () => {
       </h2>
       <div className="flex mt-[3rem] item-center justify-between min-w-[30rem] min-h-[2rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden mobile:min-w-[20rem]">
         <input
-          className="border-none pl-[20px] flex-[8]"
+          className="border-none pl-[20px] flex-[8] text-black"
           type="email"
           placeholder="Email"
         />

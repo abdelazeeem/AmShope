@@ -3,6 +3,7 @@ import { ArrowLeftOutlined, ArrowRightAltOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import { ApiSlides } from "../apifolder/SliderApi";
 import "./Slider.css";
+import { Link } from "@material-ui/core";
 
 const Slider = () => {
   //UseState hooks
@@ -51,7 +52,9 @@ const Slider = () => {
                   <h2 className="text-[55px]">{Slide.content.h2}</h2>
                   <p className="text-[30px]"> {Slide.content.p} </p>
                   <button button className="btn">
-                    Shope Now
+                    <Link href="/CatergoryPage" color="inherit">
+                      Shope Now
+                    </Link>
                   </button>
                 </div>
               </div>

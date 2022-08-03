@@ -1,15 +1,10 @@
 import React from "react";
-import Announce from "../components/Announce";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 
 const CatergoryPage = () => {
   return (
     <div>
-      <Announce />
-      <Navbar />
       <div className="flex flex-col p-5">
         <h1 className="text-[30px]">Men's</h1>
         <div className="flex items-center justify-between mt-3">
@@ -47,7 +42,6 @@ const CatergoryPage = () => {
       </div>
       <Products />
       <Newsletter />
-      <Footer />
     </div>
   );
 };
