@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="flex items-center justify-around p-2 mobile:flex-col mobile:items-start ">
       <div className="flex-1 flex flex-col flex-wrap p-2">
-        <h1 className="text-[25px] font-bold"> Am Shope</h1>
+        <h1 className="text-[25px] font-bold"> Am Shope.eg</h1>
         <p></p>
         <div className="flex items-center justify-center mt-3 self-start">
           <div className={socialStyle + ` bg-blue-700`}>

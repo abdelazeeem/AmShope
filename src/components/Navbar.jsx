@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2]">
           <div className={style}>
-            <Link href="/Register" color="inherit">
+            <Link href="" color="inherit">
               Register
             </Link>
           </div>

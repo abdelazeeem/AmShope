@@ -4,4 +4,12 @@
   @apply text-white bg-[#8a4af3] 
   rounded-full shadow-md p-3 ease-in mt-[30px]  hover:bg-sky-700 cursor-pointer;
 }
+.product_img {
+  @apply w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300;
+}
+
+.colorSelect {
+  @apply w-[2rem] h-[2rem] rounded-full border-2 p-[10px] ml-5 cursor-pointer;
+}
+@tailwind utilities;
 @tailwind utilities;
